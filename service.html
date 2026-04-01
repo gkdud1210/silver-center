@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사업안내 | 엄마손통합재가복지센터</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PC 하단 고정 상담 버튼 -->
+<div class="fixed-contact">
+  <a href="tel:042-123-4567" class="contact-btn call">📞 방문요양 상담</a>
+  <a href="https://open.kakao.com/o/XXXXXXX" target="_blank" class="contact-btn kakao">💬 카카오톡 빠른 상담</a>
+</div>
+
+<!-- 모바일 하단 상담 바 -->
+<div class="mobile-contact">
+  <a href="tel:042-123-4567" class="mobile-btn call">📞 전화 상담</a>
+  <a href="https://open.kakao.com/o/XXXXXXX" target="_blank" class="mobile-btn kakao">💬 카카오톡 상담</a>
+</div>
+
+<!-- 헤더 -->
+<header class="header service-header">
+  <h1 class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="주랑통합재가복지센터">
+    </a>
+  </h1>
+  <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
+  <nav class="nav">
+    <a href="index.html" class="home">홈</a>
+    <a href="guide.html" class="about">센터소개</a>
+    <a href="service.html" class="service">사업안내</a>
+    <a href="review.html" class="review">이용후기</a>
+    <a href="map.html" class="map">오시는길</a>
+  </nav>
+</header>
+
+<!-- 페이지 타이틀 -->
+<section class="sub-title">
+  <h2>사업안내</h2>
+  <p>엄마손통합재가복지센터의 주요 서비스를 안내합니다</p>
+</section>
+
+<!-- 탭 서비스 -->
+<section class="service-tabs">
+  <!-- 왼쪽 메뉴 -->
+  <div class="tabs-menu">
+    <button class="tab-btn active" data-tab="care">🏠 방문요양</button>
+    <button class="tab-btn" data-tab="bath">🛁 방문목욕</button>
+    <button class="tab-btn" data-tab="nursing">💊 방문간호</button>
+  </div>
+
+  <!-- 콘텐츠 -->
+  <div class="tabs-content">
+
+    <!-- 방문요양 -->
+    <div class="tab-item active" id="care">
+      <h2>🏠 방문요양</h2>
+      <img src="images/care.jpg" alt="방문요양 서비스">
+      <table>
+        <tr><th>서비스 구분</th><th>세부 내용</th></tr>
+        <tr>
+          <td>신체활동 지원</td>
+          <td>세면도움, 구강관리, 식사도움, 몸 청결, 체위변경, 이동도움, 몸 단장, 신체기능 유지, 옷 갈아입히기, 행동변화 대처, 배설도움</td>
+        </tr>
+        <tr>
+          <td>가사 및 일상생활 지원</td>
+          <td>주변 정리, 일상업무 대행, 세탁, 청소, 외출 시 동행, 취사</td>
+        </tr>
+        <tr>
+          <td>정서 지원</td>
+          <td>말벗, 생활상담</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 방문목욕 -->
+    <div class="tab-item" id="bath">
+      <h2>🛁 방문목욕</h2>
+      <img src="images/bath.jpg" alt="방문목욕 서비스">
+      <table>
+        <tr><th>서비스 구분</th><th>세부 내용</th></tr>
+        <tr>
+          <td>전문 목욕</td>
+          <td>입욕 준비, 머리감기, 몸 씻기, 말리기, 옷 입히기, 주변 정리</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 방문간호 -->
+    <div class="tab-item" id="nursing">
+      <h2>💊 방문간호</h2>
+      <img src="images/nursing.jpg" alt="방문간호 서비스">
+      <table>
+        <tr><th>서비스 구분</th><th>세부 내용</th></tr>
+        <tr><td>건강관리</td><td>건강상태 관찰, 혈압·맥박·호흡·체온 측정</td></tr>
+        <tr><td>질병관리</td><td>약물 관리, 투약 관리</td></tr>
+        <tr><td>신체기능 관리</td><td>물리치료, 통증관리</td></tr>
+        <tr><td>배뇨·배변 관리</td><td>소변줄 관리, 장루 교환 및 간호</td></tr>
+        <tr><td>욕창관리</td><td>상처 및 욕창 치료, 욕창 예방 간호</td></tr>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- 푸터 -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <h3>엄마손통합재가복지센터</h3>
+      <p>어르신의 행복한 하루를 위해<br>항상 곁에서 함께하겠습니다.</p>
+    </div>
+    <div class="footer-right">
+      <p><strong>주소</strong> 대전광역시 동구 동대전로 171-23</p>
+      <p><strong>전화</strong> 042-123-4567</p>
+      <p><strong>이메일</strong> ksenior26@naver.com</p>
+      <p><strong>운영시간</strong> 평일 09:00 ~ 18:00</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 엄마손통합재가복지센터. All Rights Reserved.</div>
+</footer>
+
+<script src="js/header.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
