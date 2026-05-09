@@ -14,13 +14,15 @@
   --yellow: #FFD43B;
   --yellow-dark: #F0B400;
   --yellow-light: #FFFDE7;
+  --yellow-text: #7A5900;
   --green: #5BAD4E;
   --green-hover: #4A9A3D;
   --green-dark: #2E6B28;
   --green-footer: #163B18;
   --green-light: #EFF8EE;
   --white: #FFFFFF;
-  --gray-bg: #F8FAF7;
+  --gray-bg: #F2F6F2;
+  --kakao-text: #3C1E1E;
   --text: #2C3A2D;
   --text-sub: #6B7C6C;
   --border: #D4E6D2;
@@ -49,11 +51,12 @@ img { max-width: 100%; height: auto; display: block; }
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 18px 8%;
+  padding: 4px 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   z-index: 1000;
   transition: all var(--transition);
 }
@@ -61,24 +64,24 @@ img { max-width: 100%; height: auto; display: block; }
 .header.scrolled {
   background: rgba(255,255,255,0.97);
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  padding: 12px 8%;
+  padding: 4px 8%;
 }
 
 .header.service-header {
   background: rgba(255,255,255,0.97);
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  padding: 14px 8%;
+  padding: 4px 8%;
 }
 
 .header .logo img {
-  height: 68px;
+  height: 85px;
   width: auto;
   transition: height var(--transition);
 }
 
 .header.scrolled .logo img,
 .header.service-header .logo img {
-  height: 54px;
+  height: 85px;
 }
 
 .nav {
@@ -90,7 +93,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav a {
   font-size: 0.95rem;
   font-weight: 500;
-  color: white;
+  color: var(--text);
   position: relative;
   padding-bottom: 4px;
   transition: color var(--transition);
@@ -111,8 +114,8 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 2px;
 }
 
-.nav a:hover { color: var(--yellow); }
-.nav a.active { color: var(--yellow); }
+.nav a:hover { color: var(--green); }
+.nav a.active { color: var(--green); }
 
 .header.scrolled .nav a:hover,
 .header.scrolled .nav a.active,
@@ -133,7 +136,7 @@ img { max-width: 100%; height: auto; display: block; }
   background: none;
   border: none;
   cursor: pointer;
-  color: white;
+  color: var(--text);
   z-index: 10001;
   line-height: 1;
   padding: 4px;
@@ -151,18 +154,18 @@ img { max-width: 100%; height: auto; display: block; }
   height: 100vh;
   min-height: 600px;
   background:
-    linear-gradient(135deg, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.18) 100%),
-    url('../images/hero.jpg') center / cover no-repeat;
+    linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)),
+    url('../images/엄마손통합재가복지센터.png') center / cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 0 8%;
+  padding: 95px 8% 0;
 }
 
 @media (max-width: 768px) {
   .hero {
     background:
-      linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.22)),
-      url('../images/hero-mobile.jpg') center / cover no-repeat;
+      linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)),
+      url('../images/엄마손통합재가복지센터.png') center / cover no-repeat;
   }
 }
 
@@ -232,6 +235,12 @@ img { max-width: 100%; height: auto; display: block; }
 .section-alt   { background: var(--gray-bg); }
 .section-yellow { background: var(--yellow-light); }
 .section-green  { background: var(--green-light); }
+
+/* 노란 배경 섹션 내 label은 노란 계열로 */
+.section-yellow .section-title .label {
+  background: rgba(255, 212, 59, 0.25);
+  color: var(--yellow-text);
+}
 
 .section-title {
   text-align: center;
@@ -349,6 +358,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .stat-card:hover {
   transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .stat-card .num {
@@ -396,7 +406,7 @@ img { max-width: 100%; height: auto; display: block; }
 .about-text .label {
   display: inline-block;
   background: var(--yellow-light);
-  color: #8B6914;
+  color: var(--yellow-text);
   font-size: 0.78rem;
   font-weight: 700;
   padding: 5px 14px;
@@ -475,7 +485,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: inline-block;
   border: 2px solid var(--green);
   color: var(--green);
-  padding: 12px 30px;
+  padding: 14px 34px;
   border-radius: 999px;
   font-weight: 700;
   font-size: 0.97rem;
@@ -588,7 +598,7 @@ img { max-width: 100%; height: auto; display: block; }
 .btn-kakao {
   display: inline-block;
   background: var(--yellow);
-  color: #3C1E1E;
+  color: var(--kakao-text);
   padding: 15px 36px;
   border-radius: 999px;
   font-weight: 700;
@@ -779,7 +789,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: inline-block;
   margin-top: 14px;
   background: var(--yellow-light);
-  color: #8B6914;
+  color: var(--yellow-text);
   font-weight: 700;
   padding: 12px 28px;
   border-radius: 999px;
@@ -922,7 +932,7 @@ img { max-width: 100%; height: auto; display: block; }
 .about-intro-text .label {
   display: inline-block;
   background: var(--yellow-light);
-  color: #8B6914;
+  color: var(--yellow-text);
   font-size: 0.78rem;
   font-weight: 700;
   padding: 5px 14px;
@@ -965,7 +975,7 @@ img { max-width: 100%; height: auto; display: block; }
 .value-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
-  border-top-color: var(--yellow-dark);
+  border-top-color: var(--green-hover);
 }
 
 .value-card .icon {
@@ -1132,7 +1142,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .contact-btn.call  { background: var(--green); }
-.contact-btn.kakao { background: #FEE500; color: #3C1E1E; }
+.contact-btn.kakao { background: #FEE500; color: var(--kakao-text); }
 
 .contact-btn:hover {
   transform: translateY(-3px);
@@ -1176,9 +1186,9 @@ img { max-width: 100%; height: auto; display: block; }
   .header           { padding: 14px 5%; }
   .header.scrolled  { padding: 10px 5%; }
   .header.service-header { padding: 12px 5%; }
-  .header .logo img { height: 52px; }
+  .header .logo img { height: 72px; }
   .header.scrolled .logo img,
-  .header.service-header .logo img { height: 46px; }
+  .header.service-header .logo img { height: 60px; }
 
   .menu-toggle { display: block; }
 
@@ -1316,5 +1326,5 @@ img { max-width: 100%; height: auto; display: block; }
   }
 
   .mobile-btn.call  { background: var(--green); color: white; }
-  .mobile-btn.kakao { background: #FEE500; color: #3C1E1E; }
+  .mobile-btn.kakao { background: #FEE500; color: var(--kakao-text); }
 }
