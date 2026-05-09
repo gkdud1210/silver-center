@@ -731,11 +731,11 @@ img { max-width: 100%; height: auto; display: block; }
 .tab-item img {
   width: 100%;
   max-width: 520px;
-  height: 280px;
-  object-fit: cover;
+  height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   margin-bottom: 28px;
+  display: block;
 }
 
 .tab-item table {
