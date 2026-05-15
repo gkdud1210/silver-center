@@ -1231,7 +1231,7 @@ img { max-width: 100%; height: auto; display: block; }
     min-height: 480px;
     background:
       linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)),
-      url('../images/엄마손통합재가복지센터.png') top center / cover no-repeat;
+      url('../images/bath.jpg') center / cover no-repeat;
   }
   .hero-content h2 { font-size: 2.1rem; }
   .hero-content p  { font-size: 0.97rem; }
