@@ -161,13 +161,6 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 95px 8% 0;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    background:
-      linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)),
-      url('../images/엄마손통합재가복지센터.png') center / cover no-repeat;
-  }
-}
 
 .hero-content {
   max-width: 580px;
@@ -1232,10 +1225,27 @@ img { max-width: 100%; height: auto; display: block; }
   .nav a::after { display: none; }
 
   /* Hero */
-  .hero { padding: 0 5%; }
+  .hero {
+    padding: 0 5%;
+    height: 65vh;
+    min-height: 480px;
+    background:
+      linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)),
+      url('../images/엄마손통합재가복지센터.png') top center / cover no-repeat;
+  }
   .hero-content h2 { font-size: 2.1rem; }
   .hero-content p  { font-size: 0.97rem; }
   .hero-badge      { font-size: 0.72rem; }
+
+  /* About & Review images */
+  .about-img img {
+    height: 260px;
+    object-position: top center;
+  }
+  .review-card img {
+    height: 220px;
+    object-position: top center;
+  }
 
   /* Grids */
   .services-grid { grid-template-columns: 1fr; }
