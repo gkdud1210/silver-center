@@ -1,5 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ===== 히어로 슬라이드쇼 =====
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  const heroDots   = document.querySelectorAll('.dot');
+  let heroIndex = 0;
+  let heroTimer;
+
+  function goToSlide(n) {
+    heroSlides[heroIndex].classList.remove('active');
+    heroDots[heroIndex].classList.remove('active');
+    heroIndex = (n + heroSlides.length) % heroSlides.length;
+    heroSlides[heroIndex].classList.add('active');
+    heroDots[heroIndex].classList.add('active');
+  }
+
+  function startSlideshow() {
+    heroTimer = setInterval(() => goToSlide(heroIndex + 1), 4000);
+  }
+
+  if (heroSlides.length > 0) {
+    heroDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(heroTimer);
+        goToSlide(i);
+        startSlideshow();
+      });
+    });
+    startSlideshow();
+  }
+
   // ===== 사업안내 탭 기능 =====
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabItems   = document.querySelectorAll('.tab-item');
