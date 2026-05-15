@@ -1276,9 +1276,10 @@ img { max-width: 100%; height: auto; display: block; }
 
   /* Hero */
   .hero {
-    padding: 100px 5% 0;
-    height: 65vh;
-    min-height: 500px;
+    padding: 115px 5% 0;
+    height: 70vh;
+    min-height: 520px;
+    align-items: flex-start;
   }
   .hero-content h2 { font-size: 2.1rem; }
   .hero-content p  { font-size: 0.97rem; }
