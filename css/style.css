@@ -1209,7 +1209,9 @@ img { max-width: 100%; height: auto; display: block; }
 
   .nav.open { right: 0; }
 
-  .nav a {
+  .nav a,
+  .header.scrolled .nav a,
+  .service-header .nav a {
     width: 100%;
     font-size: 1.05rem;
     color: rgba(255,255,255,0.85);
@@ -1218,7 +1220,11 @@ img { max-width: 100%; height: auto; display: block; }
   }
 
   .nav a:hover,
-  .nav a.active {
+  .nav a.active,
+  .header.scrolled .nav a:hover,
+  .header.scrolled .nav a.active,
+  .service-header .nav a:hover,
+  .service-header .nav a.active {
     color: var(--yellow);
     background: rgba(255,255,255,0.04);
   }
