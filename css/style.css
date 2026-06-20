@@ -1258,28 +1258,44 @@ img { max-width: 100%; height: auto; display: block; }
   .hero {
     flex-direction: column;
     height: auto;
-    min-height: auto;
-    padding: 100px 5% 50px;
-    gap: 32px;
+    min-height: 100dvh;
+    padding: 80px 6% 40px;
+    gap: 24px;
+    justify-content: center;
   }
   .hero-content {
     flex: none;
     width: 100%;
     text-align: center;
   }
-  .hero-content h2 { font-size: 2rem; }
-  .hero-content p  { font-size: 0.95rem; }
-  .hero-badge      { font-size: 0.72rem; }
+  .hero-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+  }
+  .hero-content p {
+    font-size: 0.88rem;
+    margin-bottom: 24px;
+    line-height: 1.7;
+  }
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 5px 13px;
+    margin-bottom: 14px;
+  }
+  .hero-btn {
+    padding: 12px 30px;
+    font-size: 0.92rem;
+  }
   .hero-gallery {
     max-width: 100%;
     height: auto;
     max-height: none;
-    gap: 10px;
+    gap: 8px;
   }
   .hero-frame {
     border-width: 3px;
     border-radius: 10px;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
   }
 
   /* About & Review images */
