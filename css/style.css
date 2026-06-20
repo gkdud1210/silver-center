@@ -1206,12 +1206,12 @@ img { max-width: 100%; height: auto; display: block; }
   .section { padding: 56px 5%; }
 
   /* Header */
-  .header           { padding: 14px 5%; }
-  .header.scrolled  { padding: 10px 5%; }
-  .header.service-header { padding: 12px 5%; }
-  .header .logo img { height: 150px; }
+  .header           { padding: 2px 5%; }
+  .header.scrolled  { padding: 2px 5%; }
+  .header.service-header { padding: 2px 5%; }
+  .header .logo img { height: 250px; }
   .header.scrolled .logo img,
-  .header.service-header .logo img { height: 130px; }
+  .header.service-header .logo img { height: 220px; }
 
   .menu-toggle { display: block; }
 
@@ -1259,7 +1259,7 @@ img { max-width: 100%; height: auto; display: block; }
     flex-direction: column;
     height: auto;
     min-height: 100dvh;
-    padding: 180px 6% 40px;
+    padding: 270px 6% 40px;
     gap: 24px;
     justify-content: center;
   }
