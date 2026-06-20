@@ -1210,18 +1210,18 @@ img { max-width: 100%; height: auto; display: block; }
   .header.scrolled  { padding: 0 5%; }
   .header.service-header { padding: 0 5%; }
   .header .logo img {
-    height: 260px;
+    height: 210px;
     width: auto;
     max-width: none;
     clip-path: inset(28% 0 30% 0);
-    margin-top: -73px;
-    margin-bottom: -78px;
+    margin-top: -59px;
+    margin-bottom: -63px;
   }
   .header.scrolled .logo img,
   .header.service-header .logo img {
-    height: 260px;
-    margin-top: -73px;
-    margin-bottom: -78px;
+    height: 210px;
+    margin-top: -59px;
+    margin-bottom: -63px;
   }
 
   .menu-toggle { display: block; }
