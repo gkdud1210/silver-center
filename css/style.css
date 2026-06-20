@@ -1214,26 +1214,20 @@ img { max-width: 100%; height: auto; display: block; }
   .header           { padding: 0 5%; }
   .header.scrolled  { padding: 0 5%; }
   .header.service-header { padding: 0 5%; }
-  .header .logo {
-    height: 75px;
-    overflow: hidden;
-  }
-  .header .logo a {
-    display: block;
-    height: 75px;
-    overflow: hidden;
-  }
   .header .logo img {
     height: 210px;
     width: auto;
     max-width: none;
-    margin-top: -50px;
+    clip-path: inset(28% 0 30% 0);
+    margin-top: -59px;
+    margin-bottom: -63px;
     display: block;
   }
   .header.scrolled .logo img,
   .header.service-header .logo img {
     height: 210px;
-    margin-top: -50px;
+    margin-top: -59px;
+    margin-bottom: -63px;
   }
 
   .menu-toggle {
