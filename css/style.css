@@ -1219,15 +1219,15 @@ img { max-width: 100%; height: auto; display: block; }
     width: auto;
     max-width: none;
     clip-path: inset(28% 0 30% 0);
-    margin-top: -59px;
-    margin-bottom: -63px;
+    margin-top: -68px;
+    margin-bottom: -54px;
     display: block;
   }
   .header.scrolled .logo img,
   .header.service-header .logo img {
     height: 210px;
-    margin-top: -59px;
-    margin-bottom: -63px;
+    margin-top: -68px;
+    margin-bottom: -54px;
   }
 
   .menu-toggle {
